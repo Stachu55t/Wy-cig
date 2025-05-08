@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Superszybki Wyścig</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #222; }
+    canvas { display: block; background: #444; }
+    #controls {
+      position: absolute; bottom: 10px; width: 100%; display: flex; justify-content: space-around;
+    }
+    .btn {
+      width: 80px; height: 80px; border-radius: 50%; background: #888; border: 2px solid white;
+      font-size: 20px; color: white; text-align: center; line-height: 80px;
+      user-select: none;
+    }
+    #speedometer {
+      position: absolute; top: 10px; right: 20px; font-size: 28px; color: lime; font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="speedometer">Prędko
+
